@@ -20,6 +20,9 @@ def only_evens(list_of_numbers):
     return even_numbers
  # Define the function here
     
+list_of_numbers = (3, 6, 9, 12, 15, 18, 21, 24)
+only_evens(list_of_numbers)
+        
     import numpy as np
 
 # Define the function here
@@ -30,3 +33,6 @@ def only_evens_numpy(array):
     arr = array[array%2==0]
     
     return arr
+
+list_of_numbers = np.arange(0,50,1)
+only_evens_numpy(list_of_numbers)
